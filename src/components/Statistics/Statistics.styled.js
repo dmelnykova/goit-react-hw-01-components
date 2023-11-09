@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 10px 10px rgb(95, 158, 160);
 `;
 
 export const Title = styled.h2`
