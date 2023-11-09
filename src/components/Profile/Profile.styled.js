@@ -40,7 +40,6 @@ export const UserText = styled.p`
 export const StatsList = styled.ul`
     display: flex;
     width: 100%;
-    padding: 0;
     margin-top: 54px;
 
 `;
