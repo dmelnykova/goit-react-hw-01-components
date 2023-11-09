@@ -1,11 +1,17 @@
+import {
+  Table,
+  Title,
+  Text,
+} from './TransactionHistory.styled';
+
 export const TransactionHistory = ({ transactions }) => {
     return (
-        <table>
+        <Table>
             <thead>
                 <tr>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                    <Title>Type</Title>
+                    <Title>Amount</Title>
+                    <Title>Currency</Title>
                 </tr>
             </thead>
 
@@ -13,13 +19,13 @@ export const TransactionHistory = ({ transactions }) => {
                 {transactions.map(item => {
                     return (
                         <tr key={item.id}>
-                            <td>{item.type}</td>
-                            <td>{item.amount}</td>
-                            <td>{item.currency}</td>
+                            <Text>{item.type}</Text>
+                            <Text>{item.amount}</Text>
+                            <Text>{item.currency}</Text>
                         </tr>
                     )
                 })}
             </tbody>
-        </table>
+        </Table>
     );
 };

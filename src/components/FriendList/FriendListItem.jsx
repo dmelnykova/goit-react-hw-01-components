@@ -1,4 +1,9 @@
-import { Avatar, Item, StatusSpan, Text } from './FriendList.styled';
+import {
+    Avatar,
+    Item,
+    StatusSpan,
+    Text,
+} from './FriendList.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
